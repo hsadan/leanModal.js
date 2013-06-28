@@ -33,13 +33,12 @@
 
           overlay.fadeTo(300,o.overlay);
 
-          top_pos = ($(window).height() / 2) - (modal_height / 2);
           $(modal_id).css({
               'position' : 'fixed',
               'z-index': 5000,
               'left' : 50 + '%',
               'margin-left' : - (modal_width / 2),
-              'top' : (top_pos < 0) ? o.top : top_pos
+              'top' : o.top + '%',
           });
 
           $(modal_id).fadeTo(200,1);
